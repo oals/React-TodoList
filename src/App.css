@@ -1,0 +1,65 @@
+main {
+}
+
+
+.container{
+  border : 1px solid gray;
+  border-radius:10px;
+  
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px black;
+    background: linear-gradient(to right, #ffe53b, #ff2525);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 700px;
+  width: auto;
+  padding-right: 20px;
+}
+
+.log-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 320px;
+  width: auto;
+  padding-right: 20px;
+}
+
+/* 스크롤바 전체를 대상으로 스타일 적용 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 스크롤바의 트랙(바탕) 부분 */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* 스크롤바의 핸들(움직이는 바) 부분 */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+  border: 2px solid #555;  /* 추가된 부분 */
+}
+
+/* 스크롤바의 핸들을 호버할 때 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+

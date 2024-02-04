@@ -1,0 +1,36 @@
+.hoverArea {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.hiddenContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.hoverArea:hover .hiddenContent {
+  opacity: 80%;
+}
+
+.hiddenContent .d-flex .col-6 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.completed {
+  background-color: #4CAF50;  /* 더 밝은 녹색으로 변경 */
+  color: white;  /* 텍스트 색상을 흰색으로 변경 */
+  text-decoration: line-through;  /* 완료된 항목에 취소선 추가 */
+  padding: 10px;  /* 패딩 추가 */
+  margin-bottom: 10px;  /* 마진 추가 */
+  border-radius: 5px;  /* 둥근 모서리 추가 */
+
+  
+}
